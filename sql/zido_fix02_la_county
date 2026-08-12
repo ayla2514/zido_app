@@ -1,0 +1,46 @@
+-- One-line summary: expands the allowed service area check from LA city limits to the wider LA county, so it matches what the server already assumes.
+
+-- =============================================================
+--  zido fix 02 — expand service area from LA city to LA county
+-- -------------------------------------------------------------
+--  Why:
+--   is_in_la() is still restricted to LA "city" limits
+--   (lat 33.70-34.35). But the server (zido_server.py) and
+--   CLAUDE.md already operate on LA "county" limits
+--   (lat 33.69-34.83), so the server can accept coordinates
+--   that the DB then rejects.
+--   (e.g. West Hollywood, north Santa Monica — inside LA county
+--   but outside LA city)
+--
+--   The DB isn't actively used right now (community features are
+--   on hold), so this isn't breaking anything yet, but it's a
+--   trap waiting to trigger once those features come back, so
+--   fixing it now.
+--
+--  Fix:
+--   is_in_la() is the single function used to validate location
+--   for all three tables (live_positions, reports, waves).
+--   So updating just this one function (create or replace)
+--   changes the allowed area everywhere at once, without touching
+--   each table individually.
+--
+--  Usage:
+--   Supabase > SQL Editor > New query > paste all > RUN
+--   (apply order: schema -> fix01 -> fix02)
+-- =============================================================
+
+create or replace function is_in_la(lat double precision, lon double precision)
+returns boolean as $$
+  select lat between 33.69 and 34.83
+     and lon between -118.96 and -117.64;
+$$ language sql immutable;
+
+
+-- =============================================================
+--  Verification — try running these
+-- =============================================================
+-- Check West Hollywood (outside old range, inside new range) now passes
+--   select is_in_la(34.09, -118.36);   -- should return true
+--
+-- Check somewhere fully outside, like New York, is still blocked
+--   select is_in_la(40.7128, -74.0060);  -- should return false
