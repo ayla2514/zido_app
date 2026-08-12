@@ -2,7 +2,7 @@
 # for all of LA county from OpenStreetMap, and saves them to a CSV in the same format the server already reads.
 
 # =============================================================
-#  zido - [Step 8] Gas station + "free" parking location collection (all of LA county)
+#  zido - [Step 7] Gas station + "free" parking location collection (all of LA county)
 # -------------------------------------------------------------
 #  Location: C:\zido\backend\zido_step8_collect_poi.py
 #
