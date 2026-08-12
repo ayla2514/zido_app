@@ -1,0 +1,167 @@
+-- =============================================================
+--  zido fix 01 — change position storage from "overwrite" to "append"
+-- -------------------------------------------------------------
+--  Why:
+--   The old design kept one row per user and overwrote it each time.
+--   That meant the stored position was always a few seconds old,
+--   which contradicted the view's "only show positions older than
+--   60 seconds" condition — so nearby_drivers was always empty.
+--
+--  Fix:
+--   Stop overwriting positions; append them instead.
+--   The view then picks the most recent row that is still
+--   at least 60 seconds old.
+--   -> That's the real "position from 1 minute ago".
+--
+--  Usage:
+--   Supabase > SQL Editor > New query > paste all > RUN
+--
+--  Note: existing live_positions data will be dropped.
+--        It's only test data, so this is fine.
+-- =============================================================
+
+
+-- =============================================================
+--  [1] Drop existing objects
+-- -------------------------------------------------------------
+--  The view depends on the table, so drop the view first.
+-- =============================================================
+
+drop view if exists nearby_drivers;
+drop table if exists live_positions;
+
+
+-- =============================================================
+--  [2] Recreate the position log table
+-- -------------------------------------------------------------
+--  Change: one row per user (user_id as primary key) -> many rows.
+--  A new row is appended every time a position is sent.
+-- =============================================================
+
+create table live_positions (
+  -- Per-row serial number. Needed now since each user has many rows.
+  id            bigserial primary key,
+
+  user_id       uuid not null references profiles(id) on delete cascade,
+  lat           double precision not null,
+  lon           double precision not null,
+  heading       double precision,                -- direction facing (0-360 deg)
+  speed_mps     double precision,                -- speed (meters per second)
+  is_moving     boolean not null default false,  -- whether currently moving
+  recorded_at   timestamptz not null default now(),
+
+  -- reject coordinates outside LA
+  constraint must_be_in_la check (is_in_la(lat, lon))
+);
+
+-- Index to quickly find "this user's latest position".
+-- Grouped by user, sorted by time descending.
+create index idx_positions_user_time
+  on live_positions (user_id, recorded_at desc);
+
+-- Index for cleaning up old records
+create index idx_positions_time
+  on live_positions (recorded_at);
+
+
+-- =============================================================
+--  [3] Access control (RLS)
+-- -------------------------------------------------------------
+--  Key rule: users can only read/write their own position.
+--  Others' positions are only visible through the view below,
+--  and only in processed (blurred/delayed) form.
+-- =============================================================
+
+alter table live_positions enable row level security;
+
+create policy "read own position only"
+  on live_positions for select
+  using (auth.uid() = user_id);
+
+create policy "insert own position"
+  on live_positions for insert
+  with check (auth.uid() = user_id);
+
+-- New: users must be able to delete their own position history.
+-- This lets them disappear from the map immediately after a drive ends.
+-- (Safety rule 4: disappear when stopped)
+create policy "delete own position"
+  on live_positions for delete
+  using (auth.uid() = user_id);
+
+
+-- =============================================================
+--  [4] Recreate the safety view — the most important part of zido
+-- -------------------------------------------------------------
+--  Three layers of protection applied before showing data to
+--  other users:
+--
+--   (1) Time delay : only pick records older than 60 seconds
+--                    -> makes real-time tracking impossible
+--   (2) Position blur : round to 3 decimal places (~100m grid)
+--                    -> only shows "roughly here", not exact spot
+--   (3) Moving only : exclude records where the user was stopped
+--                    -> prevents revealing home/work locations
+--
+--  "distinct on (user_id)" means "pick only one row per user".
+--  Combined with the descending order by below, this picks the
+--  most recent row that is still at least 60 seconds old.
+--  -> That's exactly the "position from 1 minute ago".
+--
+--  security_invoker = off:
+--   This view bypasses the base table's row-level security to
+--   read every user's position, but only outputs the processed
+--   (blurred/delayed) result. That's what lets it act as a safe
+--   gateway.
+-- =============================================================
+
+create view nearby_drivers
+with (security_invoker = off) as
+select distinct on (lp.user_id)
+  p.id                        as user_id,
+  p.nickname,
+  p.pin_shape,
+  p.pin_color,
+  round(lp.lat::numeric, 3)   as lat,      -- (2) blur to ~100m
+  round(lp.lon::numeric, 3)   as lon,
+  lp.heading,
+  lp.recorded_at
+from live_positions lp
+join profiles p on p.id = lp.user_id
+where lp.is_moving = true                              -- (3) moving records only
+  and lp.recorded_at < now() - interval '60 seconds'   -- (1) at least 1 min old
+  and lp.recorded_at > now() - interval '5 minutes'    --     exclude very stale records
+order by lp.user_id, lp.recorded_at desc;              -- most recent per user
+
+
+-- =============================================================
+--  [5] Update cleanup function
+-- -------------------------------------------------------------
+--  Cleanup matters more now since positions accumulate.
+--  Letting records pile up would effectively become a stored
+--  travel history. (Safety rule 5: no storing travel routes)
+-- =============================================================
+
+create or replace function cleanup_old_data()
+returns void as $$
+begin
+  -- delete position records older than 10 minutes
+  delete from live_positions where recorded_at < now() - interval '10 minutes';
+  delete from waves         where created_at  < now() - interval '1 hour';
+  delete from reports       where expires_at  < now() - interval '1 day';
+end;
+$$ language plpgsql;
+
+
+-- =============================================================
+--  Verification — try running these
+-- =============================================================
+-- Check the table was created
+--   select count(*) from live_positions;
+--
+-- Check the view was created (empty for the first minute is normal)
+--   select * from nearby_drivers;
+--
+-- Check records are accumulating (after turning on a fake driver)
+--   select user_id, count(*), min(recorded_at), max(recorded_at)
+--   from live_positions group by user_id;
