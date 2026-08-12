@@ -2,7 +2,7 @@
 # text street-boundary descriptions, no coordinates) into rough rectangular map zones by geocoding each boundary street.
 
 # =============================================================
-#  zido - [Step 9] Street sweeping zone collection
+#  zido - [Step 8] Street sweeping zone collection
 # -------------------------------------------------------------
 #  Location: C:\zido\backend\zido_step9_collect_street_sweeping.py
 #
