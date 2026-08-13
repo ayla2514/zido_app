@@ -1,0 +1,111 @@
+﻿facility_id,lot_name,address,city,zipcode,operator,hours,hourly_cost,daily_cost,monthly_cost,spaces,status,lat,lon
+666,87th St & broadway Parking Lot,237 W 87th St,Vermont Vista,90003,Free,Church Operated,Free,--,--,--,Closed to the Public at This Time,33.95895626,-118.27735684
+757,Broadway St & Spring St Parking Lot,900 N Broadway,Chinatown,90012,SP-PARCS,8 AM-Midnight Daily,See Special Features,$8.00 ,$70.00 ,176,Operational,34.06390303,-118.23617784
+759,Electric Ave & Santa Clara St Parking  Lot,1301 S Electric Ave,Venice,90291,Single Meter,7 AM-2 AM Daily ,$0.50 / 15 Min,$8.00 / 4 Hrs ,--,66,Operational,33.99126444,-118.46669723
+760,Tobar Ct & Palms Blvd Parking Lot,1600 Irving Tabor Ct,Venice,90291,Single Meter,7 AM-2 AM Daily ,$0.50 / 15 Min,$8.00 / 4 Hrs ,--,50,Operational,33.98999765,-118.46299142
+767,Vineland Ave & Magnilia Parking Lot,5161 N Vineland Ave,North Hollywood, 91601,Single Meter,8 AM-8 PM Daily,$0.25 / 30 Min,$2.50 ,--,19,Operational,34.1644262,-118.37058316
+672,Ave 57 & Figueroa Parking Lot,124 S Avenue 57,Highland Park,90042-4702,Meter / Free,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,32,Operational,34.10893917,-118.19261537
+601,Friar & Sylmar Parking Garage,14401 Friar St,Van Nuys,91401-2125,SP-PARCS,5:30 AM-7 PM M-F,$0.45 / 15 Min,$7.20 ,$72.00 ,237,Operational,34.18586728,-118.44731277
+602,Chandler & Tujunga Parking Lot,11320 Chandler Blvd,North Hollywood,91601-3130,Pay Station,7 AM-9 PM Daily ,$0.25 / 30 Min,$2.50 ,--,47,Operational,34.16791793,-118.37824279
+609,Friar & Van Nuys Parking Lot,14521 Friar St,Van Nuys,91401-2309,SP-PARCS,8 AM-5 PM M-Sat,$0.55 / 30 Min,$5.00 ,$49.50 ,76,Operational,34.18593477,-118.44984275
+610,Gilmore & Van Nuys Parking Lot,14532 Gilmore St,Van Nuys,91411-1602,SP-PARCS,8 AM-5 PM M-F,$0.55 / 30 Min,$5.00 ,$38.50 ,138,Operational,34.18738978,-118.45042544
+613,Pisani & Venice Parking Lot,2010 S Pisani Pl,Venice,90291-3817,Free,8 AM-6 PM X/Sun,Free,--,--,53,Operational,33.99181854,-118.45840005
+614,Cochran & Wilshire Parking Lot,728 S Cochran Ave,Wilshire,90036-3813,Pay Station,7 AM-9 PM Daily ,$1.00 / Hr,$4.00 / 10 Hrs,$33.00 ,41,Operational,34.06150529,-118.34716049
+616,California & Electric Parking Lot,1411 Electric Ave,Venice,90291-3733,Free,7 AM-2 AM Daily ,Free,--,--,29,Operational,33.99094774,-118.46543625
+617,Milwood & Electric Parking Lot,1511 Electric Ave,Venice,90291-3735,Free,7 AM-2 AM Daily ,Free,--,--,22,Operational,33.99067585,-118.46440222
+618,Remmet & Sherman Way East Parking Lot,7134 Remmet Ave,Canoga Park,91303,Free,8 AM-6 PM X/Sun,Free,--,--,19,Operational,34.20025046,-118.59998579
+619,Gardner & Sunset Parking Lot,1451 Gardner St,Hollywood,90046-4101,Pay Station,7 AM-Midnight Daily,$0.25 / 20 Min,$1.50 / 2 Hrs,--,22,Operational,34.09767934,-118.35326324
+620,Sylvan & Vesper Parking Lot,14607 Sylvan St,Van Nuys,91411-2327,SP-PARCS,8 AM-5 PM M-F,$0.55 / 30 Min,$5.00 ,$38.50 ,57,Operational,34.18492896,-118.45125253
+621,Baird & Gault Parking Lot,7120 Baird Ave,Reseda,91335-4128,Free,8 AM-6 PM X/Sun ,Free,--,--,81,Operational,34.2002527,-118.53702012
+622,Canby & Sherman Way Parking Lot,7131 Canby Ave,Reseda,91335-4304,Free,8 AM-6 PM X/Sun,Free,--,--,62,Operational,34.20031239,-118.53511291
+624,Baird & Sherman Way Parking Lot,7222 Baird Ave,Reseda,91335,Free,8 AM-6 PM X/Sun ,Free,--,--,78,Operational,34.20207958,-118.53702173
+625,43rd & Crenshaw Parking Lot,3416 W 43rd St,Leimert Park,90008-4906,Pay Station,7 AM-7 PM Daily ,$0.25 / 30 Min,$2.50 ,$27.50 ,172,Operational,34.00540629,-118.33235666
+626,43rd & Leimert Parking Lot,3328 W 43rd St,Leimert Park,90008-4570,Pay Station,7 AM-7 PM Daily ,$0.25 / 30 Min,$2.50 ,$27.50 ,105,Closed to the Public at This Time,34.00556984,-118.3306506
+627,Magnolia & Lankershim Parking Lot,11231 Magnolia Blvd,North Hollywood,91601-3703,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,47,Operational,34.16527401,-118.37584475
+628,Daly & Ave 26 Parking Lot,2418 Daly St,Lincoln Heights,90031-2221,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$1.00 / 2 Hrs,--,28,Operational,34.07429761,-118.21528801
+629,Cedros & Dickens Parking Garage,14591 Dickens St,Sherman Oaks,91403-3765,SP-PARCS,"7 AM-12 AM Sun-Thu, 7 AM-2 AM F-Sat",$0.60 / 20 Min,$6.00 ,$60.00 ,198,Operational,34.15069735,-118.45128935
+630,Erwin & Van Nuys Parking Lot,14517 Erwin St,Van Nuys,91411-2341,SP-PARCS,7 AM-5:30 PM M-F,$0.55 / 30 Min,$5.00 ,$49.50 ,75,Operational,34.18391656,-118.44981534
+631,Gilmore & Sylmar Parking Lot,14402 Gilmore St,Van Nuys,91401-1429,SP-PARCS,8 AM-5 PM M-F,$0.55 / 30 Min,$5.00 ,$38.50 ,68,Operational,34.1873819,-118.44698021
+632,11th & 52nd Parking Lot,5345 11th Ave,Los Angeles,90043-4817,Free,7 AM-9 PM X/Sun ,Free,--,--,29,Operational,33.9935878,-118.32975048
+633,11th & 54th Parking Lot,5407 11th Ave,Los Angeles,90043-2511,Free,7 AM-9 PM X/Sun ,Free,--,--,32,Operational,33.99267305,-118.32977419
+634,11th & 57th Parking Lot,5701 11th Ave,Los Angeles,90043-2501,Free,7 AM-9 PM X/Sun ,Free,--,--,35,Operational,33.99065173,-118.32977624
+635,Ave 56 & Marmion Parking Lot,119 N Avenue 56,Highland Park,90042-4116,Meter / Free,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,$44.00 ,85,Operational,34.10977672,-118.19411052
+636,Ave 58 & Marmion Parking Lot,5712 E Marmion Wy,Highland Park,90042-4206,Single Meter,7 AM-9 PM Daily ,$0.25 / 30 Min,$2.50 ,--,62,Operational,34.11060265,-118.1928379
+637,Marmion & Ave 59 Parking Lot,124 N Avenue 59,Highland Park,90042-4208,Meter / Free,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,36,Operational,34.11115965,-118.19152786
+638,Ave 58 & Figueroa West Parking Lot,120 S Avenue 58,Highland Park,90042-4704,Single Meter,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,28,Operational,34.1092467,-118.19192307
+639,Roselawn & Figueroa Parking Lot,116 S Avenue 56,Highland Park,90042-4608,Station/Free,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,$44.00 ,46,Operational,34.10825876,-118.19406974
+640,Darby & Sherman Way Parking Lot,7130 Darby Ave,Reseda,91335,Free,8 AM-6 PM X/Sun,Free,--,--,46,Operational,34.20041422,-118.53299047
+642,Wooster & Pico Parking Garage,1421 S Wooster St,Los Angeles,90035-3406,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,50,Operational,34.05401793,-118.38297189
+643,Echo Park & Sunset Parking Lot,1147 Echo Park Ave,Echo Park,90026-4212,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,$40.00 ,43,Operational,34.07628583,-118.2580944
+644,Remmet & Wyandotte Parking Lot,7219 Remmet Ave,Canoga Park,91303-1532,Single Meter,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,18,Operational,34.20167629,-118.60061233
+645,Purdue & Santa Monica Parking Lot,1540 Purdue Ave,Los Angeles,90025-3105,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 4 Hrs,$65.00 ,37,Operational,34.04643219,-118.4508568
+646,Larga & Glendale Parking Lot,3528 Larga Ave,Los Angeles,90039-1926,Free,8 AM-6 PM X/Sun ,Free,--,--,38,Operational,34.11757574,-118.26030561
+647,8th & Pacific Parking Lot,474 W 8th St,San Pedro,90731,Pay Station,8 AM-6 PM Daily ,$0.50 / Hr,$1.00 / 2 Hrs,--,41,Operational,33.73719727,-118.2872743
+650,Marine & Anaheim Parking Lot,928 Marine Ave,Wilmington,90744-4415,Free,8 AM-6 PM X/Sun,Free,--,--,40,Operational,33.78194632,-118.26356879
+651,Barry & Santa Monica Parking Lot,1516 Barry Ave,Los Angeles,90025-2904,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 10 Hrs,--,20,Operational,34.04469824,-118.45503074
+652,Butler & Santa Monica Parking Lot,1530 Butler Ave,Los Angeles,90025-3002,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 4 Hrs,--,43,Operational,34.0461113,-118.45200324
+653,Corinth & Santa Monica Parking Lot,1547 Corinth Ave,Los Angeles,90025-3201,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 10 Hrs,$65.00 ,38,Operational,34.04646851,-118.45024375
+655,Idaho & Sawtelle Parking Lot,11312 Idaho Ave,Los Angeles,90025-3108,Pay Station,7 AM-9 PM Daily ,$1.00 / Hr,$4.00 / 4 Hrs,--,17,Operational,34.04555678,-118.44834272
+656,Colby & Santa Monica Parking Lot,1615 Colby Ave,Los Angeles,90025-3013,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 4 Hrs,--,34,Operational,34.04454015,-118.45275493
+657,Ave 22 & Broadway Parking Lot,221 Avenue 22,Lincoln Heights,90031-2206,Meter / Free,8 AM-6 PM Daily,$0.25 / 30 Min,$2.50 ,--,40,Operational,34.07285618,-118.2177424
+658,Ave 24 & Broadway Parking Lot,216 Avenue 24,Lincoln Heights,90031-2210,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$1.00 / 2 Hrs,--,59,Operational,34.07289886,-118.21657872
+659,Daly & Broadway Parking Lot,2334 Daly St,Lincoln Heights,90031-2263,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,79,Operational,34.07289195,-118.21497778
+660,Ave 24 & Pasadena Parking Lot,154 Ave 24,Lincoln Heights,90031-2256,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,51,Operational,34.07435657,-118.21657743
+661,Workman & Ave 26 Parking Lot,2416 Workman St,Lincoln Heights,90031-2320,Free,8 AM-6 PM X/Sun,Free,--,--,46,Operational,34.07434869,-118.21402407
+662,Lemoyne & Sunset Parking Lot,1152 Lemoyne St,Echo Park,90026-3207,Pay Station,7 AM-9 PM X/Sun,$0.25 / 30 Min,$2.50 ,$40.00 ,82,Operational,34.07680846,-118.25928882
+663,Logan & Sunset Parking Lot,1146 Logan St,Echo Park,90026-3211,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,38,Operational,34.07649183,-118.25855639
+664,Navarro & Eastern Parking Lot,4883 Navarro St,El Sereno,90032-2228,Free,24 Hrs Daily,Free,--,--,30,Operational,34.08590778,-118.17696703
+665,87th & Grand Parking Lot,323 W 87th St,Los Angeles,90003-3313,Free,8 AM-6 PM X/Sun,Free,--,--,64,Closed to the Public at This Time,33.95908067,-118.27920908
+668,Ave 51 & Meridian Parking Lot,5058 Meridian St,Los Angeles,90042-1723,Pay Station,7 AM-9 PM Daily ,$0.25 / 30 Min,$2.50 ,--,44,Operational,34.12173992,-118.20486644
+669,Lincoln & Ave 50 Parking Lot,5033 Lincoln Ave,Los Angeles,90042-2343,Pay Station,7 AM-Midnight Daily,$1.00 / Hr,$4.00 / 10 Hrs,--,39,Operational,34.12061332,-118.20590319
+670,Cherokee & Hollywood Parking Garage,1710 Cherokee Ave,Hollywood,90028-4818,SP-PARCS,24 Hrs Daily,See Special Features,See Special Features,$144.00 ,386,Operational,34.10249869,-118.33431293
+673,Ave 58 & Figueroa East Parking Lot,117 S Avenue 58,Highland Park,90042-4703,Meter / Free,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,32,Operational,34.10964745,-118.19142757
+674,Jordan & Sherman Way Parking Lot,7220 Jordan Ave,Canoga Park,91303,Free,24 Hrs Daily,Free,--,--,35,Operational,34.20171319,-118.60250183
+675,Russell & Vermont Parking Lot,4642 Russell Ave,Los Angeles,90027-4240,Pay Station,7 AM-Midnight Daily,$1.00 / Hr,$4.00 / 10 Hrs,--,32,Operational,34.10423521,-118.29110408
+679,Sunset & Logan Parking Lot,1711 Sunset Blvd,Echo Park,90026-3224,Single Meter,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,6,Operational,34.0776644,-118.25868607
+680,Broxton & Westwood Parking Garage,1036 Broxton Ave,Westwood Village,90024-2824,SP-PARCS,"7 AM-12:30 AM Sun-Thu, 7 AM-2:30 AM F-Sat ",$1.50 / 20 Min,$9.00 ,$125.00 ,365,Operational,34.06198668,-118.4462835
+681,Sunset & Swarthmore Parking Lot,15216 W Sunset Blvd,Pacific Palisades,90272-3611,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$2.00 / 2 Hrs,--,25,Operational,34.04625658,-118.52492616
+682,Breed & Cesar Chavez Parking Lot,318 N Breed St,Boyle Heights,90033-1802,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,27,Operational,34.04776963,-118.20815945
+683,5th & Pacific Parking Lot,445 W 5th St,San Pedro,90731,Single Meter,8 AM-6 PM X/Sun ,$0.25 / 30 Min,$2.00 / 4 Hrs,$40.00 ,26,Operational,33.73943567,-118.28664695
+684,7th & Pacific Parking Lot,460 W 7th St,San Pedro,90731,Pay Station,8 AM-6 PM X/Sun ,$0.25 / 30 Min,$2.50 ,$40.00 ,86,Operational,33.73812141,-118.28669251
+685,Malcolm & Pico Parking Lot,2386 Malcolm Ave,Los Angeles,90064-2206,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$4.00 / 10 Hrs,--,19,Operational,34.04163913,-118.42667615
+686,Caspar & Merton Parking Lot,5063 Caspar Ave,Eagle Rock,90041-1967,Single Meter,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,29,Operational,34.13847559,-118.2133748
+687,Remmet & Sherman Way West Parking Lot,7141 Remmet Ave,Canoga Park,91303-2016,Free,No overnight parking 12 AM-6 AM nightly,Free,--,--,21,Operational,34.20038779,-118.6006458
+688,Clark & Pico Parking Garage,1156 Clark Dr,Los Angeles,90035-1400,Pay Station,7 AM-9 PM Daily,$0.25 / 20 Min,$3.00 ,--,27,Operational,34.05553437,-118.38445891
+689,Pico & Robertson Parking Lot,8866 Pico Blvd,Los Angeles,90035-3302,SP-PARCS,7 AM-11 PM Daily,$1.00 / Hr,$5.00 ,$50.00 ,73,Operational,34.05485868,-118.38538474
+690,Ventura & Laurel Canyon Parking Garage,12225 Ventura Blvd,Studio City,91604-2519,SP-PARCS,"7 AM-10:30 PM Sun-Thu, 7 AM-Midnight F-Sat",See Special Features,$6.00 ,$47.50 ,393,Operational,34.14412777,-118.39948705
+691,Vermont & Wilshire Parking Lot,682 S Vermont Ave,Los Angeles,90005-1348,SP-PARCS,8 AM-6 PM M-F ,$1.50 / 15 Min,$9.00 ,$70.00 ,65,Operational,34.06049171,-118.29121725
+692,Vermont & 6th Parking Lot,601 S Vermont Ave,Los Angeles,90005-1347,Single Meter,7 AM-9 PM Daily ,$0.25 / 20 Min,$3.00 ,--,57,Operational,34.06327079,-118.29208341
+694,Larchmont & 1st Parking Lot,209 N Larchmont Blvd,Los Angeles,90004-3706,Pay Station,7 AM-Midnight Daily,$1.00 / Hr,$2.00 / 2 Hrs,--,34,Operational,34.07499845,-118.32401621
+695,Ave 57 & Marmion Parking Lot,123 N Avenue 57,Highland Park,90042-4115,Single Meter,7 AM-9 PM Daily ,$0.25 / 30 Min,$2.50 ,--,38,Operational,34.11033977,-118.19301579
+696,Avalon & I St Parking Lot,835 Avalon Blvd,Wilmington,90744-4501,Free,24 Hrs Daily,Free,--,--,14,Operational,33.7810769,-118.26287414
+697,Workman & Broadway Parking Lot,2332 Workman St,Lincoln Heights,90031-2616,Free,8 AM-6 PM X/Sun,Free,--,--,26,Operational,34.0729715,-118.21396006
+698,Prosser & Pico Parking Lot,2367 Prosser Ave,Los Angeles,90064-2323,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,25,Operational,34.04437501,-118.42174136
+699,11th & Pacific Parking Lot,529 11th St,San Pedro,90731,Free,"8 AM-6 PM X/Sa,Su",Free,--,--,40,Operational,33.73395721,-118.28872056
+700,86th & Broadway Parking Lot,239 W 86th Pl,Los Angeles,90003-3307,Free,Church Operated,Free,--,--,21,Closed to the Public at This Time,33.95953157,-118.27744054
+701,Dell & Venice Parking Lot,2150 Dell Ave,Venice,90291-4526,SP-PARCS,"Operation Hrs vary, No overnight parking 11 PM-5 AM nightly",See Special Features,See Special Features,$15.00,150,Operational,33.98618264,-118.46733046
+702,Vine & Hollywood Parking Lot,1625 N Vine St,Hollywood,90028-8802,SP-PARCS,24 Hrs Daily,See Special Features,See Special Features,$100.00,457,Operational,34.10057343,-118.32729961
+703,Robertson & Alden Parking Garage,123 S Robertson Blvd,Los Angeles,90048-3207,SP-PARCS,6 AM-11:30 PM Daily,See Special Features,$12.00 ,$150.00 ,334,Operational,34.07452424,-118.38408514
+704,Jordan & Gault Parking Lot,7128 Jordan Ave,Canoga Park,91303,Single Meter,7 AM-7 PM Daily,$0.25 / 30 Min,$2.50 ,--,37,Operational,34.20011296,-118.60252901
+705,Don Pio & Costanso Parking Lot,21901 W Costanso St,Woodland Hills,91364,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,--,28,Operational,34.16778981,-118.60421
+707,Midvale & Pico Parking Lot,2377 Midvale Ave,Los Angeles,90064-2103,Pay Station,7 AM-9 PM Daily ,$1.00 / Hr,$4.00 / 10 Hrs,--,41,Operational,34.03987558,-118.43000122
+711,Garden & Glendale Parking Lot,3528 Garden Ave,Los Angeles,90039-1922,Free,6 AM-2 AM Daily ,Free,--,--,34,Operational,34.11690568,-118.26111917
+712,Baird & Wyandotte Parking Lot,7246 Baird Ave,Reseda,91335,Free,8 AM-6 PM X/Sun ,Free,--,--,34,Operational,34.20247037,-118.53701704
+713,Chicago & Cesar Chavez Parking Lot,249 N Chicago St,Boyle Heights,90033-2906,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$2.50 ,$33.00 ,69,Operational,34.04754649,-118.21098114
+715,Overland & Pico Parking Lot,2371 Overland Ave,Los Angeles,90064-2209,Pay Station,7 AM-9 PM Daily,$0.25 / 20 Min,$3.00 ,--,27,Operational,34.04233586,-118.4253834
+725,Remmet & Gault Parking Lot,7117 Remmet Ave,Canoga Park,91303-2016,Free,24 Hrs Daily,Free,--,--,17,Operational,34.19978065,-118.60061772
+731,Venice & Pacific Parking Lot,200 N Venice Blvd,Venice,90291,SP-PARCS,Overnight parking by monthly permit only 11 PM-5 AM nightly,See Special Features,See Special Features,$55.00 ,177,Operational,33.98551719,-118.46863421
+732,Larchmont & Beverly Parking Garage,218 N Larchmont Blvd,Los Angeles,90004-3707,SP-PARCS,"7 AM-9 PM M-Sat, 9 AM-5 PM Sun free",$0.75 / 30 Min,$6.00 ,$65.00 ,167,Operational,34.07521342,-118.32324319
+735,Mesa & 6th Parking Lot,396 W 6th St,San Pedro,90731-2622,Pay Station,8 AM-6 PM X/Sun ,$0.25 / 30 Min,$2.00 / 4 Hrs,--,50,Operational,33.73922647,-118.28544749
+740,Main & Rose Parking Lot,301 S Main St,Venice,90291-2523,SP-Pay Sta,"Operation Hrs vary, No overnight parking 11 PM-5 AM nightly",See Special Features,See Special Features,--,41,Operational,33.99567896,-118.47760256
+744,Vermont & 85th Parking Lot,8463 S Vermont Ave,Los Angeles,90044-3448,Pay Station,7 AM-8 PM M-F,$0.25 / 30 Min,$2.50 ,--,23,Operational,33.96139223,-118.29214317
+745,Hollywood & Highland Parking Garage,6801 Hollywood Blvd,Hollywood,90028,SP-PARCS,9 AM-2 AM Daily,$2.00 / 20 Min,$20.00 ,$150.00 ,"3,020",Operational,34.10300932,-118.33936092
+747,Vineland & Lankershim Parking Lot,5000 N Vineland Ave,North Hollywood,91601-3815,Single Meter,8 AM-8 PM Daily,$0.25 / 30 Min,$2.50 ,--,73,Operational,34.16024089,-118.37064116
+749,Washington & Palm Grove Parking Lot,4702 W Washington Blvd,Los Angeles,90016,Free,Operated by Cultural Affairs Department,Free,--,--,7,Operational,34.03957961,-118.34166639
+752,San Fernando Valley Civic Center Parking Garage,6265 Sylmar Ave,Van Nuys,91401,SP-PARCS,"6:30 AM-6 PM M-W and F, 6:30 AM-7 PM Thu",$1.00 / 30 Min,$8.00 ,$75.00 ,302,Operational,34.1840568,-118.44661033
+753,Mangrove Parking Lot,414 E Temple St,Los Angeles,90012,SP-PARCS,"5:30 AM-4 PM M-F, 9 AM-5:30 PM Sat",$10.00 ,$10.00 ,$100.00 ,471,Operational,34.04991278,-118.23707675
+761,Pacific & Windward Parking Lot,1608 S Pacific Ave,Los Angeles,90291-5112,Pay Station,8 AM-6 PM Daily,$1.00 / Hr ,$1.00 / 1 Hr ,--,14,Operational,33.98761169,-118.47190889
+762,Dickens & Sepulveda Parking Lot,15314 W Dickens St,Sherman Oaks,91403,Pay Station,7 AM-9 PM Daily,$1.00 / Hr,$2.00 / 2 Hrs,--,42,Operational,34.15265838,-118.46706045
+763,Aiso Street Parking Garage,101 N Judge John Aiso St,Los Angeles,90012,SP-PARCS,"6 AM-Midnight M-Thu, 6 AM-2 AM F, 9 AM-2 AM Sat,  9 AM-10 PM Sun",See Special Features,$14.00 ,$90.00 ,299,Operational,34.05122672,-118.24078702
+766,Pacific & 7th Parking Lot,528 W 7th St,San Pedro,90731,Free,8 AM-8 PM Daily ,Free,--,--,39,Operational,33.73813366,-118.28872951
+799,Ventura & Willis Parking Lot,14758 Ventura Blvd,Sherman Oaks,91403-3542,Pay Station,7 AM-9 PM Daily,$0.25 / 30 Min,$1.00 / 2 Hrs,--,20,Operational,34.15167453,-118.45476042
