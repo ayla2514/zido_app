@@ -65,3 +65,13 @@ data/
 ├── public_parking_lots/   LA city public parking lots
 └── street_parking/        Road points, POI road points, speed limits, turn lanes, street sweeping zones
 ```
+
+## Data Sources & Attribution
+
+- **Road points, POIs, speed limits, turn lanes** — © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, via the Overpass API. Available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/); the derived files in `data/street_parking/` are shared under the same license.
+- **Metered parking, public parking lots, street sweeping** — City of Los Angeles / LADOT via the [LA Open Data portal](https://data.lacity.org/).
+- **Road closures and CHP incidents** — Caltrans [QuickMap](https://quickmap.dot.ca.gov/) feeds (fetched live, not stored in this repo).
+- **Air quality** — U.S. EPA [AirNow API](https://docs.airnowapi.org/) (fetched live).
+- **Routing** — [Valhalla](https://github.com/valhalla/valhalla) via [Stadia Maps](https://stadiamaps.com/).
+
+API keys (Supabase, Stadia Maps, AirNow) are read from a local `.env` file and are not committed.
